@@ -10,18 +10,15 @@ El proyecto está estructurado bajo el enfoque de **Clean Architecture**, dividi
 
 ### 🔹 Domain
 Contiene el núcleo del negocio:
-- Entidades (Ej: Employee)
+- Entidades (Enterprise, Code)
 - Reglas de negocio
 - Lógica pura (sin dependencias externas)
 
 ### 🔹 Application
 Define los casos de uso:
-- Interfaces (puertos)
-- Servicios (lógica de aplicación)
+- Interfaces 
 - DTOs
 - Validaciones
-
-Aquí se orquesta la lógica sin depender de frameworks.
 
 ### 🔹 Infrastructure
 Implementaciones concretas:
@@ -43,7 +40,8 @@ Punto de entrada del sistema:
 
 - .NET 8 / ASP.NET Core
 - Entity Framework Core
-- SQL Server
+- PostgreSQL
+- ORM
 - Swagger (OpenAPI)
 - Git
 
